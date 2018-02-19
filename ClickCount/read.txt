@@ -1,0 +1,9 @@
+﻿https://www.google.com.br/search?q=c%23+icone+na+bandeja&oq=c%23+icone+&aqs=chrome.2.69i57j69i58j0l4.40801j0j7&sourceid=chrome&ie=UTF-8
+
+https://social.msdn.microsoft.com/Forums/pt-BR/695a1844-b01d-4dcb-8fb9-70692b002eff/minimizar-aplicao-para-a-bandeja-do-windows?forum=vscsharppt
+
+https://pt.stackoverflow.com/questions/91100/manter-aplicação-windows-form-aberta-na-bandeja-de-ícones-com-c
+
+https://stackoverflow.com/questions/995195/how-can-i-make-a-net-windows-forms-application-that-only-runs-in-the-system-tra/10250051#10250051
+
+https://amirton.wordpress.com/2010/01/10/colocando-um-icone-na-bandeja-do-sistema-para-sua-aplicacao-net/
