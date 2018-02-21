@@ -16,8 +16,8 @@ namespace ClickCount
     {
         public ClickCountForm()
         {
-            InitializeComponent();            
-            //label1.Text = "Total Clicks ->" + clicks;
+            InitializeComponent();
+            ClickCount.ShowBalloonTip(2000, "Atenção", "APP ativo!", ToolTipIcon.Info);
             MouseHook.Start();
             MouseHook.MouseAction += new EventHandler(Event);
         }
@@ -25,19 +25,14 @@ namespace ClickCount
         int clicks = 0;
         private void Event(object sender, EventArgs e)
         {
-            //Console.WriteLine("Left mouse click!");
             clicks++;
-            //label1.Text = "Total Clicks ->" + clicks;
         }
 
         private void notifyIcon1_MouseClick(object sender, MouseEventArgs e)
         {
             //this.Show();
-            //this.WindowState = FormWindowState.Normal;
-
-            ClickCount.Visible = true;
-            ClickCount.ShowBalloonTip(20000, "Total Clicks", clicks.ToString(), ToolTipIcon.Info);
-
+            //this.WindowState = FormWindowState.Normal;            
+            ClickCount.ContextMenuStrip = options;
         }
 
         private void Form1_Resize(object sender, EventArgs e)
@@ -46,6 +41,28 @@ namespace ClickCount
             //{
             //    this.Hide();
             //}
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void ClickCount_DoubleClick(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ClickCount_MouseMove(object sender, MouseEventArgs e)
+        {
+            //ClickCount.Visible = true;
+            //ClickCount.ShowBalloonTip(20000, "Total Clicks", clicks.ToString(), ToolTipIcon.Info);
+        }
+
+        private void ClickCount_Click(object sender, EventArgs e)
+        {
+            ClickCount.Visible = true;
+            ClickCount.ShowBalloonTip(20000, "Total Clicks", clicks.ToString(), ToolTipIcon.Info);
         }
     }
 }
