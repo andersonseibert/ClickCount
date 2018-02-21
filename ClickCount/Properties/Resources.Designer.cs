@@ -8,6 +8,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using System.Drawing;
+
 namespace ClickCount.Properties
 {
 
@@ -67,5 +69,7 @@ namespace ClickCount.Properties
                 resourceCulture = value;
             }
         }
+
+        public static Icon AppIcon { get; internal set; }
     }
 }
