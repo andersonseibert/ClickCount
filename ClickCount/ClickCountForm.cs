@@ -45,12 +45,12 @@ namespace ClickCount
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            clicks = 0;
         }
 
         private void ClickCount_DoubleClick(object sender, EventArgs e)
         {
-            
+
         }
 
         private void ClickCount_MouseMove(object sender, MouseEventArgs e)
@@ -63,6 +63,11 @@ namespace ClickCount
         {
             ClickCount.Visible = true;
             ClickCount.ShowBalloonTip(20000, "Total Clicks", clicks.ToString(), ToolTipIcon.Info);
+        }
+
+        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
