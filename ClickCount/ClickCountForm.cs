@@ -17,7 +17,7 @@ namespace ClickCount
         public ClickCountForm()
         {
             InitializeComponent();
-            ClickCount.ShowBalloonTip(2000, "Atenção", "APP ativo!", ToolTipIcon.Info);
+            ClickCount.ShowBalloonTip(2000, "Atention", "APP Enabled!", ToolTipIcon.Info);
             MouseHook.Start();
             MouseHook.MouseAction += new EventHandler(Event);
         }
